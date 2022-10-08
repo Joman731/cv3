@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me </title>
+  </head>
+
+  <body>
+
+    <h3> contact me 聯繫我</h3>
+    <ol start="5">
+      <li>姓名: 楊家松 Joman Yang </li>
+      <li>電郵: joman731@msn.com</li>
+      <li>電話: 0918-924-678</li>
+    </ol>
+    <hr>
+<!--現在，讓我們構建我們的表單，使其看起來像一個正確的聯繫表單。然後在我們的表格中，我們想要一個標籤，上面寫著你的名字-->
+    <form action="mailto:joyang@jmcnet.com" method="post" enctype="text/plain"> <!-- action= 即點擊提交submit 時會發生什麼 index.html回首頁，
+    所以我要做的是將表單操作更改為郵件到，mailto 所做的是，當你按下提交按鈕時，它們會打開你的默認郵件客戶端，如果您在 Chrome 中，
+    它可能會進入 Gmail。它會輸入您指定的電子郵件地址在:冒號之後  -->
+<!-- method="post" 在這種情況下，只是意味著我們要將用戶輸入的內容 post發佈 這些輸入中的字，到電子郵件客戶端,-->
+<!--form class="" 先刪除這個類別，添加另一個稱為編碼類型的屬性 enctype 我們表單中的數據是用純文本編碼的text/plain ,這樣一來，當它啟動 Mail 應用程序時，您就不會看到這些有趣的百分比符號和數字。 -->
+      <label> 輸入您的姓名: </label> <!-- -->
+      <input type="text" name="yourName" value=""> <br>  <!-- 我們需要添加的另一件事是為每個name 屬性添加一個值，因為這是識別每個輸入中的數據 -->
+      <label> 您的電子信箱: </label>  <!-- -->
+      <input type="email" name="yourEmail" value=""> <br> <!--而不是input 密碼輸入類型，我們將其更改為電子郵件。 -->
+      <label> Your Message </label> <br>
+      <textarea name="yourMessage" rows="10" cols="30"> </textarea> <br><!--而文本區域textarea有兩個屬性是真的,一個是行數 文本區域應該有多高，另一個是列數 網頁上的寬度-->
+
+      <input type="submit" name="" > <br> <!-- 現在，當我們提交表單並將用戶輸入的數據發佈post到我們的郵件客戶端時，然後 -->
+
+    </form>
+
+  </body>
+</html>
